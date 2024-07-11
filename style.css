@@ -11,6 +11,31 @@ body {
   display: none;
 }
 
+#loginSection {
+  max-width: 660px;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+#loginForm {
+  display: grid;
+  margin: 20px auto;
+}
+
+#loginForm input {
+  margin: 6px 0;
+  padding: 12px 12px;
+  border: none;
+  outline: none;
+  background-color: #444;
+  color: white;
+}
+
+#loginForm input::placeholder {
+  color: white;
+}
+
 #mainHeader {
   background-color: #333;
   color: #fff;
@@ -59,8 +84,8 @@ h2 {
 #storyForm textarea,
 #storyForm button,
 .choiceInput,
-#loginForm input,
-#loginForm button,
+/* #loginForm input,
+#loginForm button, */
 #predefinedChoices select,
 #editStoryForm input,
 #editStoryForm textarea,
