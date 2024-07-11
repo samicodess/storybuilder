@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Story Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="loginSection">
+        <h2>Login</h2>
+        <div id="loginForm">
+          <input type="text" id="username" placeholder="Enter your username" />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <button id="loginBtn">Login</button>
+        </div>
+        <p id="loginError" class="hidden">Invalid username or password</p>
+      </section>
+      <header class="hidden" id="mainHeader">
+        <h1>Interactive Story Builder</h1>
+      </header>
+      <aside class="hidden" id="sidebar">
+        <nav>
+          <ul>
+            <li><a href="#" id="navHome">Home</a></li>
+            <li><a href="#" id="navStoryBuilder">Story Builder</a></li>
+            <li><a href="#" id="navStories">Stories</a></li>
+            <li><a href="#" id="navLogout">Logout</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section id="homeSection" class="hidden">
+        <h2>Welcome, <span id="userName"></span>!</h2>
+      </section>
+      <section id="storyBuilderSection" class="hidden">
+        <h2>Create Your Story</h2>
+        <div id="storyForm">
+          <input type="text" id="storyTitle" placeholder="Story Title" required />
+          <textarea
+            id="storyContent"
+            placeholder="Start your story here..." required
+          ></textarea>
+          <div id="predefinedChoices">
+            <h3>Choose a Story Type</h3>
+            <label
+              ><input type="radio" name="choice" value="Happy" required /> Happy</label
+            >
+            <label><input type="radio" name="choice" value="Sad" /> Sad</label>
+            <label
+              ><input type="radio" name="choice" value="Excited" />
+              Excited</label
+            >
+            <select id="outcomeDropdown" class="hidden">
+              <option value="Outcome 1">Outcome 1</option>
+              <option value="Outcome 2">Outcome 2</option>
+              <option value="Outcome 3">Outcome 3</option>
+            </select>
+            <button id="addPredefinedChoiceBtn">Add Choice</button>
+          </div>
+          <div id="choicesContainer"></div>
+          <button id="saveStoryBtn">Save Story</button>
+        </div>
+      </section>
+      <section id="storiesSection" class="hidden">
+        <h2>Your Stories</h2>
+        <div id="storiesList"></div>
+      </section>
+      <section id="editStorySection" class="hidden">
+        <h2>Edit Story</h2>
+        <div id="editStoryForm">
+          <input type="text" id="editStoryTitle" placeholder="Story Title" />
+          <textarea
+            id="editStoryContent"
+            placeholder="Start your story here..."
+          ></textarea>
+          <div id="editChoicesContainer"></div>
+          <div id="editPredefinedChoices">
+            <h3>Choose a Story Type</h3>
+            <label
+              ><input type="radio" name="editChoice" value="Happy" />
+              Happy</label
+            >
+            <label
+              ><input type="radio" name="editChoice" value="Sad" /> Sad</label
+            >
+            <label
+              ><input type="radio" name="editChoice" value="Excited" />
+              Excited</label
+            >
+            <select id="editOutcomeDropdown">
+              <option value="Outcome 1">Outcome 1</option>
+              <option value="Outcome 2">Outcome 2</option>
+              <option value="Outcome 3">Outcome 3</option>
+            </select>
+            <button id="addEditPredefinedChoiceBtn">Add Choice</button>
+          </div>
+          <div id="editChoicesContainer"></div>
+          <button id="updateStoryBtn">Update Story</button>
+          <button id="cancelEditBtn">Cancel</button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
