@@ -18,6 +18,8 @@
             placeholder="Enter your password"
           />
           <button id="loginBtn">Login</button>
+          <h1>username eshte : user1</h1>
+          <h1>passwordi eshte : user2</h1>
         </div>
         <p id="loginError" class="hidden">Invalid username or password</p>
       </section>
@@ -40,15 +42,22 @@
       <section id="storyBuilderSection" class="hidden">
         <h2>Create Your Story</h2>
         <div id="storyForm">
-          <input type="text" id="storyTitle" placeholder="Story Title" required />
+          <input
+            type="text"
+            id="storyTitle"
+            placeholder="Story Title"
+            required
+          />
           <textarea
             id="storyContent"
-            placeholder="Start your story here..." required
+            placeholder="Start your story here..."
+            required
           ></textarea>
           <div id="predefinedChoices">
             <h3>Choose a Story Type</h3>
             <label
-              ><input type="radio" name="choice" value="Happy" required /> Happy</label
+              ><input type="radio" name="choice" value="Happy" required />
+              Happy</label
             >
             <label><input type="radio" name="choice" value="Sad" /> Sad</label>
             <label

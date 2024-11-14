@@ -11,6 +11,12 @@ body {
   display: none;
 }
 
+h1 {
+  font-size: 15px;
+  color: #555;
+  padding-top: 22px;
+}
+
 #loginSection {
   max-width: 660px;
   align-items: center;
